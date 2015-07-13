@@ -2,13 +2,13 @@
   "manifest_version": 2,
 
   "name": "BeatportToYoutube",
-  "description": "This extension allows you to search on Youtube for the current Beatport tune. By João Martins https://github.com/Joao-Martins",
-  "version": "1.0",
+  "description": "This extension allows you to search on Youtube for the current song playing on your Beatport Pro. By João Martins https://github.com/Joao-Martins - http://joao-martins.github.io",
+  "version": "2.0",
   "permissions": [ "tabs",
-    "https://www.beatport.com/*","http://www.beatport.com/*"
+    "https://pro.beatport.com/*","http://pro.beatport.com/*"
   ],
   "background":{
-    "persistent":false,
+    "persistent": false,
     "page":"background.html"
   },
   "browser_action": {
