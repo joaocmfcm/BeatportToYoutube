@@ -13,10 +13,10 @@ trackName = $('.player-current-track-container .player-track-name-artist.player-
 mix = $('.player-current-track-container .player-track-name-artist.player-track-name-artist-standard .track-title .remixed').text();
 
 //sets the full track name
-fullTrackName = artists + ' - ' + trackName + ' ' + mix;
+fullTrackName = artists + ' - ' + trackName;
 
 //create the search query for youtube
-var searchQuery = 'http://www.youtube.com/results?search_query='.concat(encodeURIComponent(fullTrackName)).concat('&sm=3');
+var searchQuery = 'https://play.spotify.com/search/'.concat(encodeURIComponent(fullTrackName));
 
 var win = window.open(searchQuery, 'BeatportToYoutube');
 win.focus();
