@@ -16,7 +16,6 @@ mix = $('.player-current-track-container .player-track-name-artist.player-track-
 fullTrackName = artists + ' - ' + trackName;
 
 //create the search query for youtube
-var searchQuery = 'https://play.spotify.com/search/'.concat(encodeURIComponent(fullTrackName));
-
+var searchQuery = 'https://open.spotify.com/search/results/'.concat(encodeURIComponent(fullTrackName));
 var win = window.open(searchQuery, 'BeatportToYoutube');
 win.focus();
